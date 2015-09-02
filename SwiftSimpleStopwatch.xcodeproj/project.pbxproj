@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6FF86C3C1B978D4F00DFFDAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF86C3B1B978D4F00DFFDAD /* AppDelegate.swift */; };
-		6FF86C3E1B978D4F00DFFDAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF86C3D1B978D4F00DFFDAD /* ViewController.swift */; };
 		6FF86C411B978D4F00DFFDAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6FF86C3F1B978D4F00DFFDAD /* Main.storyboard */; };
 		6FF86C431B978D4F00DFFDAD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6FF86C421B978D4F00DFFDAD /* Images.xcassets */; };
 		6FF86C461B978D4F00DFFDAD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FF86C441B978D4F00DFFDAD /* LaunchScreen.xib */; };
 		6FF86C521B978D4F00DFFDAD /* SwiftSimpleStopwatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF86C511B978D4F00DFFDAD /* SwiftSimpleStopwatchTests.swift */; };
+		6FF86C5C1B978F5200DFFDAD /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FF86C5B1B978F5200DFFDAD /* StopwatchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +29,13 @@
 		6FF86C361B978D4F00DFFDAD /* SwiftSimpleStopwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftSimpleStopwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF86C3A1B978D4F00DFFDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FF86C3B1B978D4F00DFFDAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6FF86C3D1B978D4F00DFFDAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6FF86C401B978D4F00DFFDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6FF86C421B978D4F00DFFDAD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6FF86C451B978D4F00DFFDAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		6FF86C4B1B978D4F00DFFDAD /* SwiftSimpleStopwatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftSimpleStopwatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FF86C501B978D4F00DFFDAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6FF86C511B978D4F00DFFDAD /* SwiftSimpleStopwatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftSimpleStopwatchTests.swift; sourceTree = "<group>"; };
+		6FF86C5B1B978F5200DFFDAD /* StopwatchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,11 +78,11 @@
 			isa = PBXGroup;
 			children = (
 				6FF86C3B1B978D4F00DFFDAD /* AppDelegate.swift */,
-				6FF86C3D1B978D4F00DFFDAD /* ViewController.swift */,
 				6FF86C3F1B978D4F00DFFDAD /* Main.storyboard */,
 				6FF86C421B978D4F00DFFDAD /* Images.xcassets */,
 				6FF86C441B978D4F00DFFDAD /* LaunchScreen.xib */,
 				6FF86C391B978D4F00DFFDAD /* Supporting Files */,
+				6FF86C5B1B978F5200DFFDAD /* StopwatchViewController.swift */,
 			);
 			path = SwiftSimpleStopwatch;
 			sourceTree = "<group>";
@@ -212,7 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FF86C3E1B978D4F00DFFDAD /* ViewController.swift in Sources */,
+				6FF86C5C1B978F5200DFFDAD /* StopwatchViewController.swift in Sources */,
 				6FF86C3C1B978D4F00DFFDAD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
