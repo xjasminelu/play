@@ -1,9 +1,9 @@
 //
 //  StopwatchViewController.swift
-//  SwiftSimpleStopwatch
+//  Stopwatch
 //
-//  Created by Scotty Shaw on 9/2/15.
-//  Copyright (c) 2015 ___sks6___. All rights reserved.
+//  Created by Jasmine Lu on 10/10/15.
+//  Copyright © 2015 Jasmine Lu. All rights reserved.
 //
 
 import UIKit
@@ -38,40 +38,28 @@ class StopwatchViewController: UIViewController {
     }
     
     func updateTime() {
-        var currentTime = NSDate.timeIntervalSinceReferenceDate()
+        let currentTime = NSDate.timeIntervalSinceReferenceDate()
         
         // calculate elapsed time
-        var elapsedTime: NSTimeInterval = currentTime - startTime
+        var elapsedTime = currentTime - startTime
         
         // calculate elapsed minutes
         let minutes = UInt8(elapsedTime / 60.0)
-        elapsedTime -= (NSTimeInterval(minutes) * 60.0)
+        elapsedTime -= NSTimeInterval(minutes) * 60.0
         
         // calculate elapsed seconds
         let seconds = UInt8(elapsedTime)
         elapsedTime -= NSTimeInterval(seconds)
         
-        // calculate the fraction of milliseconds to be displayed
-        let fraction = UInt8(elapsedTime * 100)
+        // calculate elapsed milliseconds
+        let milliseconds = UInt8(elapsedTime * 100)
         
-        // add the leading zero for minutes, seconds and millseconds and store them as string constants
+        // add the leading zero for minutes, seconds and milliseconds and store them as string constants
         let strMinutes = String(format: "%02d", minutes)
         let strSeconds = String(format: "%02d", seconds)
-        let strFraction = String(format: "%02d", fraction)
+        let strMilliseconds = String(format: "%02d", milliseconds)
         
         // concatenate minutes, seconds and milliseconds and assign them to the UILabel
-        timeDisplayLabel.text = "\(strMinutes):\(strSeconds):\(strFraction)"
+        timeDisplayLabel.text = "\(strMinutes):\(strSeconds):\(strMilliseconds)"
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

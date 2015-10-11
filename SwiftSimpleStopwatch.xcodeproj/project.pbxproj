@@ -156,6 +156,8 @@
 		6FF86C2E1B978D4F00DFFDAD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = "___sks6___";
 				TargetAttributes = {
@@ -411,6 +413,7 @@
 				6FF86C571B978D4F00DFFDAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FF86C581B978D4F00DFFDAD /* Build configuration list for PBXNativeTarget "SwiftSimpleStopwatchTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +422,7 @@
 				6FF86C5A1B978D4F00DFFDAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
