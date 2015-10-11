@@ -15,10 +15,11 @@ class StopwatchViewController: UIViewController {
     
     @IBOutlet weak var timeDisplayLabel: UILabel!
     
-    @IBAction func go(sender: AnyObject) {if !timer.valid {
-        let aSelector : Selector = "updateTime"
-        timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
-        startTime = NSDate.timeIntervalSinceReferenceDate()
+    @IBAction func go(sender: AnyObject) {
+        if !timer.valid {
+            let aSelector : Selector = "updateTime"
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: aSelector, userInfo: nil, repeats: true)
+            startTime = NSDate.timeIntervalSinceReferenceDate()
         }
     }
     
